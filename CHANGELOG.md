@@ -1,3 +1,6 @@
+### 1.0.2: August 9th, 2018
+* Updated collector url
+
 ### 1.0.1: August 9th, 2018
 * Updated JS code ([WD-689](https://cos.citz.gov.bc.ca/jira/browse/WD-689))
 
