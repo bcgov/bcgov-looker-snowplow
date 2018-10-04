@@ -1,3 +1,6 @@
+### 1.0.3.1: October 4, 2018
+* Added new script at request of ryrjanes.  Bumped version by .1 because I forgot to for 1.0.3.
+
 ### 1.0.2: August 9th, 2018
 * Updated collector url
 
