@@ -1,6 +1,6 @@
 {
 	"name": "bcgov-plugin/bcgov-looker-snowplow",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "wordpress-plugin",
 	"require": {
 		"composer/installers": "^1.0"
