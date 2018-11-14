@@ -16,7 +16,7 @@
  * Plugin Name:       BCGov Looker Snowplow
  * Plugin URI:        https://cos.citz.gov.bc.ca/jira/browse/WD-608
  * Description:       This plugin is used to interface with the new analytics tools, Snowplow and Looker.
- * Version:           1.0.4
+ * Version:           1.0.5
  * Author:            Steve Howard
  * Author URI:        https://cos.citz.gov.bc.ca/jira/secure/ViewProfile.jspa?name=smhoward%40idir/
  * License:           GPL-2.0+

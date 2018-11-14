@@ -1,4 +1,4 @@
-### 1.0.4: November 14th, 2018
+### 1.0.4 && 1.0.5: November 14th, 2018
 * Added new script at request of R. Janes.
 
 ### 1.0.3.1: October 4, 2018
