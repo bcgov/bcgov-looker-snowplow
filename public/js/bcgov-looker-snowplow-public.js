@@ -2,9 +2,9 @@
     p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
     };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
     n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://sp-js.apps.gov.bc.ca/aubjyAzCUz7dJwqdbH3cMi45LjI.js","snowplow"));
-var collector = 'spt.apps.gov.bc.ca';
+var collector = bcgov_snowplow_vars.collector_url;
 window.snowplow('newTracker','rt',collector, {
-    appId: "Snowplow_engage",
+    appId: bcgov_snowplow_vars.appId,
     platform: 'web',
     respectDoNotTrack: true,
     post: true,

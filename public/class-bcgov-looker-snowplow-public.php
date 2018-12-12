@@ -61,18 +61,6 @@ class BCGov_Looker_Snowplow_Public {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in BCGov_Looker_Snowplow_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The BCGov_Looker_Snowplow_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/bcgov-looker-snowplow-public.css', array(), $this->version, 'all' );
 
 	}
@@ -84,19 +72,26 @@ class BCGov_Looker_Snowplow_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in BCGov_Looker_Snowplow_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The BCGov_Looker_Snowplow_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
+		// get network options. Replace with defaults if necessary
+		if ( get_site_option('bcgov-snowplow-network-appid') && get_site_option('bcgov-snowplow-network-appid') != '' ) {
+			$snowplow_appid = get_site_option('bcgov-snowplow-network-appid');
+		} else {
+			$snowplow_appid = 'Snowplow_standalone';
+		}
+
+		if ( get_site_option('bcgov-snowplow-network-collector-url') && get_site_option('bcgov-snowplow-network-collector-url') != '' ) {
+			$snowplow_collector_url = get_site_option('bcgov-snowplow-network-collector-url');
+		} else {
+			$snowplow_collector_url = 'spt.apps.gov.bc.ca';
+		}
+
+		$bcgov_snowplow_options = array(
+			'appId' => $snowplow_appid,
+			'collector_url' => $snowplow_collector_url
+		);
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bcgov-looker-snowplow-public.js', array( 'jquery' ), $this->version, false );
+		wp_localize_script( $this->plugin_name, 'bcgov_snowplow_vars', $bcgov_snowplow_options );
 
 	}
 

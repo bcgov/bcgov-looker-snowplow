@@ -153,6 +153,9 @@ class BCGov_Looker_Snowplow {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'network_admin_menu', $plugin_admin, 'add_network_settings_menu' );
+		$this->loader->add_action( 'update_wpmu_options', $plugin_admin, 'save_snowplow_network_settings' );
+
 
 	}
 
