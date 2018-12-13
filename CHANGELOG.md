@@ -1,3 +1,6 @@
+### 1.1.0: December 13th, 2018
+* Updated the plugin to allow for a flexible appId and collector URL ([WD-760](https://cos.citz.gov.bc.ca/jira/browse/WD-760))
+
 ### 1.0.4 && 1.0.5: November 14th, 2018
 * Added new script at request of R. Janes.
 
