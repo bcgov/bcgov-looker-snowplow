@@ -18,16 +18,21 @@ window.snowplow('enableActivityTracking', 30, 30); // Ping every 30 seconds afte
 window.snowplow('enableLinkClickTracking');
 window.snowplow('enableFormTracking');
 window.snowplow('trackPageView');
-window.snowplow('trackSiteSearch',
-    getUrlParamArray('s','')
-);
 
-function getUrlParamArray(param, defaultValue) {
-    var vars = [];
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        if ( key === param ) {
-            vars.push(value);
-        }
-    });
-    return vars;
+// Check if this is a search page
+// if so, include the following
+if (bcgov_snowplow_vars.is_search) {
+    window.snowplow('trackSiteSearch',
+        getUrlParamArray('s','')
+    );
+
+    function getUrlParamArray(param, defaultValue) {
+        var vars = [];
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            if ( key === param ) {
+                vars.push(value);
+            }
+        });
+        return vars;
+    }
 }

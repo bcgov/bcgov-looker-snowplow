@@ -87,7 +87,8 @@ class BCGov_Looker_Snowplow_Public {
 
 		$bcgov_snowplow_options = array(
 			'appId' => $snowplow_appid,
-			'collector_url' => $snowplow_collector_url
+			'collector_url' => $snowplow_collector_url,
+			'is_search' =>  is_search()
 		);
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bcgov-looker-snowplow-public.js', array( 'jquery' ), $this->version, false );

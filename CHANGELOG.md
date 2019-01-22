@@ -1,3 +1,6 @@
+### 1.2.0: January 22nd, 2019
+* Updated the plugin to allow include different JS depending on if it is a search ([WD-788](https://cos.citz.gov.bc.ca/jira/browse/WD-788))
+
 ### 1.1.0: December 13th, 2018
 * Updated the plugin to allow for a flexible appId and collector URL ([WD-760](https://cos.citz.gov.bc.ca/jira/browse/WD-760))
 
