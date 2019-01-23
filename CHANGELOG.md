@@ -1,3 +1,6 @@
+### 1.2.1: January 23rd, 2019
+* Removed the form tracking code
+
 ### 1.2.0: January 22nd, 2019
 * Updated the plugin to allow include different JS depending on if it is a search ([WD-788](https://cos.citz.gov.bc.ca/jira/browse/WD-788))
 
