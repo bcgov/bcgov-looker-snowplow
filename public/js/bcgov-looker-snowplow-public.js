@@ -6,7 +6,6 @@ var collector = bcgov_snowplow_vars.collector_url;
 window.snowplow('newTracker','rt',collector, {
     appId: bcgov_snowplow_vars.appId,
     platform: 'web',
-    respectDoNotTrack: true,
     post: true,
     forceSecureTracker: true,
     contexts: {
