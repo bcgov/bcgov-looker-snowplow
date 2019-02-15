@@ -1,3 +1,6 @@
+### 1.2.2: February 14tg, 2019
+* Removed the "do not track" code
+
 ### 1.2.1: January 23rd, 2019
 * Removed the form tracking code
 
