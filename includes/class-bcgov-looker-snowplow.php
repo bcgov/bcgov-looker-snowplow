@@ -69,7 +69,7 @@ class BCGov_Looker_Snowplow {
 	public function __construct() {
 
 		$this->plugin_name = 'bcgov-looker-snowplow';
-		$this->version = '1.2.3';
+		$this->version = '1.2.4';
 
 		$this->load_dependencies();
 		$this->set_locale();

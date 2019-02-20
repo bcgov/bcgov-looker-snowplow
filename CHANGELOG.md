@@ -1,4 +1,7 @@
 ### 1.2.3: February 20th, 2019
+* Added README.md for github
+
+### 1.2.3: February 20th, 2019
 * Updated the tracker JS URL
 
 ### 1.2.2: February 14th, 2019
