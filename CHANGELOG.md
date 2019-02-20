@@ -1,4 +1,7 @@
-### 1.2.2: February 14tg, 2019
+### 1.2.3: February 20th, 2019
+* Updated the tracker JS URL
+
+### 1.2.2: February 14th, 2019
 * Removed the "do not track" code
 
 ### 1.2.1: January 23rd, 2019
