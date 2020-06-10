@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://cos.citz.gov.bc.ca/jira/browse/WD-608
+ * @link       https://github.com/bcgov/bcgov-looker-snowplow.git
  * @since      1.0.0
  *
  * @package    BCGov_Looker_Snowplow
@@ -151,8 +151,6 @@ class BCGov_Looker_Snowplow {
 
 		$plugin_admin = new BCGov_Looker_Snowplow_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'network_admin_menu', $plugin_admin, 'add_network_settings_menu' );
 		$this->loader->add_action( 'update_wpmu_options', $plugin_admin, 'save_snowplow_network_settings' );
 
@@ -169,8 +167,7 @@ class BCGov_Looker_Snowplow {
 	private function define_public_hooks() {
 
 		$plugin_public = new BCGov_Looker_Snowplow_Public( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+		
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 	}

@@ -3,7 +3,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://cos.citz.gov.bc.ca/jira/browse/WD-608
+ * @link       https://github.com/bcgov/bcgov-looker-snowplow.git
  * @since      1.0.0
  *
  * @package    BCGov_Looker_Snowplow

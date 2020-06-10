@@ -7,7 +7,7 @@ BCGov WordPress plugin for embedding Snowplow data collection on all public page
 Install the plugin by copying or cloning the repo in to the plugins folder:
 ```bash
 # Clone the plugin
-git clone https://github.com/SteveMHoward/bcgov-looker-snowplow.git
+git clone https://github.com/bcgov/bcgov-looker-snowplow.git
 ```
 
 ## Folder Structure

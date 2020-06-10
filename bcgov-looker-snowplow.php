@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://cos.citz.gov.bc.ca/jira/browse/WD-608
+ * @link              https://github.com/bcgov/bcgov-looker-snowplow.git
  * @since             1.0.0
  * @package           BCGov_Looker_Snowplow
  *
  * @wordpress-plugin
  * Plugin Name:       BCGov Looker Snowplow
- * Plugin URI:        https://cos.citz.gov.bc.ca/jira/browse/WD-608
+ * Plugin URI:        https://github.com/bcgov/bcgov-looker-snowplow.git
  * Description:       This plugin is used to interface with the new analytics tools, Snowplow and Looker.
  * Version:           1.2.4
  * Author:            Steve Howard
- * Author URI:        https://cos.citz.gov.bc.ca/jira/secure/ViewProfile.jspa?name=smhoward%40idir/
+ * Author URI:        https://github.com/SteveMHoward
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       bcgov-looker-snowplow

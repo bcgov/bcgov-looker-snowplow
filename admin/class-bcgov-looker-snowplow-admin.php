@@ -3,7 +3,7 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       https://cos.citz.gov.bc.ca/jira/browse/WD-608
+ * @link       https://github.com/bcgov/bcgov-looker-snowplow.git
  * @since      1.0.0
  *
  * @package    BCGov_Looker_Snowplow
@@ -51,28 +51,6 @@ class BCGov_Looker_Snowplow_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-
-	}
-
-	/**
-	 * Register the stylesheets for the admin area.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_styles() {
-
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/bcgov-looker-snowplow-admin.css', array(), $this->version, 'all' );
-
-	}
-
-	/**
-	 * Register the JavaScript for the admin area.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bcgov-looker-snowplow-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 
